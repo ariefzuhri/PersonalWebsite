@@ -14,15 +14,16 @@ class NavBar extends Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const url = 'https://api.quotable.io/random';
-    axios.get(url).then(data => {
-      const response = data.data
-      this.setState({ quote: `"${response.content}" — ${response.author}` })
-      console.log(data);
-    }).catch(function (err) {
-      console.log(err)
-    });
+    axios.get(url)
+      .then(data => {
+        const response = data.data
+        this.setState({ quote: `"${response.content}" — ${response.author}` })
+        console.log(data);
+      }).catch(function (err) {
+        console.log(err)
+      });
   }
 
   render() {
@@ -30,7 +31,7 @@ class NavBar extends Component {
       <NavBarContainer {...this.props}>
         <Logo
           w="100px"
-          color={["white", "white", "telegram.500", "telegram.500"]}
+          color={["white", "white", "teal.500", "teal.500"]}
         />
         <MenuLinks quote={this.state.quote} />
       </NavBarContainer>
@@ -74,6 +75,7 @@ const MenuLinks = ({ quote }) => {
           </Box>
         </Stack>
       </Box>
+
       <Modal isOpen={isOpen} onClose={onClose} size="xl">
         <ModalOverlay />
         <ModalContent>
@@ -104,7 +106,7 @@ const NavBarContainer = ({ children, ...props }) => {
       mb={8}
       p={8}
       bg={["telegram.500", "telegram.500", "transparent", "transparent"]}
-      color={["white", "white", "telegram.500", "telegram.500"]}
+      color={["white", "white", "teal.500", "teal.500"]}
       {...props}
     >
       {children}

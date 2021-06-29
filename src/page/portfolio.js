@@ -89,6 +89,7 @@ export default function Portfolio() {
                         <Button
                             display="block"
                             size="md"
+                            color="teal.500"
                             backgroundColor="transparent"
                             leftIcon={<FiCornerUpLeft />}
                         >
@@ -96,6 +97,7 @@ export default function Portfolio() {
                         </Button>
                     </Fade>
                 </Container>
+
                 <Container maxW="7xl" paddingTop={2} paddingLeft={{ base: "8", md: "12", lg: "12" }} paddingRight={{ base: "8", md: "12", lg: "12" }} >
                     <Fade duration={500} right>
                         <Box>
@@ -113,6 +115,7 @@ export default function Portfolio() {
                         >
                             <PortfolioContent />
                         </Grid>
+
                         <Grid
                             pt={2}
                             templateRows="repeat(3, 1fr)"

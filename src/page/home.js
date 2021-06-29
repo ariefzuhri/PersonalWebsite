@@ -24,9 +24,8 @@ export default function Home(props) {
                     <Fade duration={500} delay={100} left>
                         <Box>
                             <Text textAlign={{ base: "justify" }} fontSize={{ base: "md", md: "lg", lg: "xl" }} maxW="xl">
-                                I'm a software engineering student at <Link href="https://ugm.ac.id" color="teal.500" isExternal>Gadjah Mada University<ExternalLinkIcon mx="2px" /></Link>.
-                            </Text>
-                            <Text textAlign={{ base: "justify" }} fontSize={{ base: "md", md: "lg", lg: "xl" }} maxW="xl">
+                                I'm a software engineering student at <Link href="https://ugm.ac.id" color="teal.500" isExternal>Gadjah Mada University<ExternalLinkIcon mx="2px" /></Link>. 
+                                <br></br>
                                 I like my campus, the place where I prepare for my future :D
                             </Text>
                         </Box>

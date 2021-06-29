@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiCornerUpRight } from "react-icons/fi";
-import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiMail, FiCornerUpRight } from "react-icons/fi";
 import { Box, Flex, Button, Stack, IconButton, HStack } from "@chakra-ui/react";
 
 const BotNavBar = (props) => {
@@ -80,7 +79,7 @@ const BotNavBarContainer = ({ children, ...props }) => {
             mt={8}
             p={8}
             bg={["telegram.500", "telegram.500", "transparent", "transparent"]}
-            color={["white", "white", "telegram.500", "telegram.500"]}
+            color={["white", "white", "teal.500", "teal.500"]}
             {...props}
         >
             {children}
